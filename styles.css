@@ -1,0 +1,96 @@
+/* Body and fullscreen background */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7e0e0;
+    font-family: Arial, sans-serif;
+}
+
+/* Main love calculator container */
+.love-calculator {
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Love symbols animation */
+.symbols {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    animation: heartAnimation 2s infinite;
+}
+
+.heart-symbol {
+    margin: 0 10px;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Calculator container */
+.calculator {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+/* Input and button styles */
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #f8a3a3;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #f8a3a3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f67a7a;
+}
+
+/* Result section */
+#result {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Best Couple message */
+.best-couple-message {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #ff69b4;
+    font-weight: bold;
+    display: none;
+}
